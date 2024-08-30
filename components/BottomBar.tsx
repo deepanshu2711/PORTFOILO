@@ -7,6 +7,7 @@ import {
   TooltipTrigger,
 } from "./ui/tooltip";
 import Link from "next/link";
+import { ModeToggle } from "./toggleTheme";
 
 const BottomBar = () => {
   return (
@@ -100,6 +101,16 @@ const BottomBar = () => {
             </TooltipTrigger>
             <TooltipContent className="bg-gray-950 text-gray-100">
               <p className="text-sm">Mail</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <ModeToggle />
+            </TooltipTrigger>
+            <TooltipContent className="bg-gray-950 text-gray-100">
+              <p className="text-sm">Theme</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
