@@ -1,5 +1,6 @@
 import AboutSection from "@/components/AboutSection";
 import HeroSection from "@/components/HeroSection";
+import WorkExperienceSection from "@/components/WorkExperienceSection";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="flex flex-col gap-10 mt-16">
         <HeroSection />
         <AboutSection />
+        <WorkExperienceSection />
       </div>
     </main>
   );
