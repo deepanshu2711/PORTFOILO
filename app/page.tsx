@@ -2,6 +2,7 @@ import AboutSection from "@/components/AboutSection";
 import BlurBottom from "@/components/BlurBottom";
 import EducationSection from "@/components/EducationSection";
 import HeroSection from "@/components/HeroSection";
+import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
 import WorkExperienceSection from "@/components/WorkExperienceSection";
 
@@ -15,6 +16,7 @@ export default function Home() {
         <WorkExperienceSection />
         <EducationSection />
         <SkillsSection />
+        <ProjectsSection />
       </div>
     </main>
   );
