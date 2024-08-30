@@ -12,7 +12,7 @@ const WorkExperienceSection = () => {
       <div className="flex items-start justify-between">
         <div className="flex items-start gap-3 w-full">
           <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarImage src="/searchAI.jpg" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <div
@@ -43,7 +43,7 @@ const WorkExperienceSection = () => {
             </div>
             {isOpen && (
               <div className="mt-2">
-                <p className="font-normal text-gray-700 text-[14px]">
+                <p className="font-normal text-gray-500 text-[14px]">
                   As a Frontend Core Engineer at SearchAI, I specialize in
                   developing and optimizing our e-commerce platform using
                   Next.js and React. My role involves designing and implementing
@@ -52,21 +52,21 @@ const WorkExperienceSection = () => {
                 </p>
                 <div className="mt-2">
                   <ul>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-2 text-gray-500">
                       <Dot />
                       <p className="text-[14px]">
                         Building and maintaining scalable and high-performance
                         web applications with Next.js and React.
                       </p>
                     </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-2 text-gray-500">
                       <Dot />
                       <p className="text-[14px]">
                         Implementing best practices to ensure fast loading times
                         and smooth interactions across various devices.
                       </p>
                     </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-2 text-gray-500">
                       <Dot />
                       <p className="text-[14px]">
                         Working closely with design and backend teams to deliver
