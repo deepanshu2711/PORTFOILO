@@ -35,7 +35,7 @@ const ProjectsSection = () => {
           />
           <Project
             title="E-Connect"
-            description="A 1-to-1 Video calling application using WebRtc from scratch which lets you create a room or join a room with roomId and also have a functionality to schedule a meeting with a particular User and users can also view their meeting history"
+            description="A one-to-one Video calling application using WebRtc from scratch which lets you create a room or join a room with roomId and also have a functionality to schedule a meeting with a particular User and users can also view their meeting history"
             image="/e-connect.jpg"
             gihtub="https://github.com/deepanshu2711/E-Connect-WebRTC"
             skills={[

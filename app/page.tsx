@@ -1,6 +1,7 @@
 import AboutSection from "@/components/AboutSection";
 import BlurBottom from "@/components/BlurBottom";
 import BottomBar from "@/components/BottomBar";
+import ContactSection from "@/components/ContactSection";
 import EducationSection from "@/components/EducationSection";
 import HeroSection from "@/components/HeroSection";
 import ProjectsSection from "@/components/ProjectsSection";
@@ -19,6 +20,7 @@ export default function Home() {
         <EducationSection />
         <SkillsSection />
         <ProjectsSection />
+        <ContactSection />
       </div>
     </main>
   );

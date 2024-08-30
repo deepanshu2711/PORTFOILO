@@ -31,6 +31,16 @@ const Project = ({
             width={500}
             className="rounded-t-lg h-[170px] object-cover"
           />
+          {/* <video
+            width="300"
+            className="w-[500px] h-[170px] object-cover"
+            autoPlay
+            loop
+            muted
+          >
+            <source src="/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video> */}
         </div>
       </CardHeader>
       <CardContent>
