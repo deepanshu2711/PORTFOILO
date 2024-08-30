@@ -11,7 +11,7 @@ const WorkExperienceSection = () => {
       <p className="text-xl font-bold">Work Experience</p>
       <div className="flex items-start justify-between">
         <div className="flex items-start gap-3 w-full">
-          <Avatar>
+          <Avatar className="border-[5px] dark:border-gray-300 ">
             <AvatarImage src="/searchAI.jpg" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
@@ -28,7 +28,7 @@ const WorkExperienceSection = () => {
                   {isOpen ? (
                     <ChevronRight className="inline-block w-4 h-4 ml-1 text-gray-400 transform transition-transform duration-400 rotate-90" />
                   ) : (
-                    <ChevronRight className="inline-block w-4 h-4 ml-1 text-gray-400 transform transition-transform duration-400 animate-bounce group-hover:text-black " />
+                    <ChevronRight className="inline-block w-4 h-4 ml-1 text-gray-400 transform transition-transform duration-400 animate-bounce group-hover:text-black dark:group-hover:text-white " />
                   )}
                 </div>
                 <p className="font-sans text-xs">
@@ -36,14 +36,14 @@ const WorkExperienceSection = () => {
                 </p>
               </div>
               <div>
-                <p className="font-medium text-gray-500 text-sm md:text-[14px]">
+                <p className="font-medium hidden md:block text-gray-500 text-sm md:text-[14px]">
                   April 2024 - July 2024
                 </p>
               </div>
             </div>
             {isOpen && (
               <div className="mt-2">
-                <p className="font-normal text-gray-500 text-[14px]">
+                <p className="font-normal text-gray-500 dark:text-gray-400 text-[14px]">
                   As a Frontend Core Engineer at SearchAI, I specialize in
                   developing and optimizing our e-commerce platform using
                   Next.js and React. My role involves designing and implementing
@@ -52,21 +52,21 @@ const WorkExperienceSection = () => {
                 </p>
                 <div className="mt-2">
                   <ul>
-                    <li className="flex items-start gap-2 text-gray-500">
+                    <li className="flex items-start gap-2 text-gray-500 dark:text-gray-400">
                       <Dot />
                       <p className="text-[14px]">
                         Building and maintaining scalable and high-performance
                         web applications with Next.js and React.
                       </p>
                     </li>
-                    <li className="flex items-start gap-2 text-gray-500">
+                    <li className="flex items-start gap-2 text-gray-500 dark:text-gray-400">
                       <Dot />
                       <p className="text-[14px]">
                         Implementing best practices to ensure fast loading times
                         and smooth interactions across various devices.
                       </p>
                     </li>
-                    <li className="flex items-start gap-2 text-gray-500">
+                    <li className="flex items-start gap-2 text-gray-500 dark:text-gray-400">
                       <Dot />
                       <p className="text-[14px]">
                         Working closely with design and backend teams to deliver

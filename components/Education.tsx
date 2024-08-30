@@ -17,7 +17,7 @@ const Education = ({
 }: EducationProps) => {
   return (
     <div className="flex items-start gap-3 w-full">
-      <Avatar>
+      <Avatar className="border-[5px] dark:border-gray-300">
         <AvatarImage src={image} />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
@@ -29,9 +29,14 @@ const Education = ({
                 {name}{" "}
               </p>
             </div>
-            <p className="font-sans text-xs">{degree}</p>
+            <div className="flex items-center gap-2 mt-1 md:mt-0">
+              <p className="font-sans text-[12px] md:text-[12px]">{degree}</p>
+              <p className="font-medium md:hidden text-gray-500 text-[12px] md:text-[14px]">
+                {startDate} - {endDate}
+              </p>
+            </div>
           </div>
-          <div>
+          <div className="hidden md:block">
             <p className="font-medium text-gray-500 text-sm md:text-[14px]">
               {startDate} - {endDate}
             </p>

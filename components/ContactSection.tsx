@@ -12,7 +12,7 @@ const ContactSection = () => {
           <p className="text-3xl font-bold tracking-tighter sm:text-5xl">
             Get in Touch
           </p>
-          <p className="md:text-[16px] max-w-[700px] text-[14px] text-gray-500 text-center">
+          <p className="md:text-[16px] max-w-[700px] text-[14px] text-gray-500 dark:text-gray-400 text-center">
             Want to chat? Just shoot me a dm with a{" "}
             <Link
               href={"https://x.com/DeepanshuS7943"}

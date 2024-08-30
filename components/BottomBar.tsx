@@ -11,9 +11,9 @@ import { ModeToggle } from "./toggleTheme";
 
 const BottomBar = () => {
   return (
-    <div className="fixed z-30 bottom-2 animate-bounce hover:animate-none border border-gray-300 shadow-lg self-center bg-white  rounded-full p-1  text-black">
-      <div className="flex items-center gap-6 px-4">
-        <TooltipProvider>
+    <div className="fixed z-30 bottom-2 animate-bounce hover:animate-none border border-gray-300 dark:border-gray-700 shadow-lg self-center bg-white dark:bg-[#0F1011]  rounded-full p-1  text-black">
+      <div className="flex items-center hover:gap-6  gap-4 px-4 transition-all delay-75">
+        <TooltipProvider delayDuration={0}>
           <Tooltip>
             <TooltipTrigger>
               <Link
@@ -21,8 +21,8 @@ const BottomBar = () => {
                 target="_blank"
                 className="flex items-center gap-2"
               >
-                <div className="hover:p-4 py-4 transition-all delay-[25] hover:bg-gray-100 rounded-full cursor-pointer">
-                  <FileText className="h-[20px] w-[20px]" />
+                <div className="hover:p-4 py-4 transition-all delay-[50] hover:bg-gray-100 dark:hover:bg-white/10 rounded-full cursor-pointer">
+                  <FileText className="h-[20px] w-[20px] dark:text-white" />
                 </div>
                 <div className="w-[1px] h-[30px] bg-gray-300" />
               </Link>
@@ -32,7 +32,7 @@ const BottomBar = () => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-        <TooltipProvider>
+        <TooltipProvider delayDuration={0}>
           <Tooltip>
             <TooltipTrigger>
               <Link
@@ -40,8 +40,8 @@ const BottomBar = () => {
                 target="_blank"
                 className="flex items-center gap-2"
               >
-                <div className="hover:p-4 py-4 transition-all delay-[25] hover:bg-gray-100 rounded-full cursor-pointer">
-                  <Github className="h-[20px] w-[20px]" />
+                <div className="hover:p-4 py-4 transition-all delay-[50] hover:bg-gray-100 dark:hover:bg-white/10 rounded-full cursor-pointer">
+                  <Github className="h-[20px] w-[20px] dark:text-white" />
                 </div>
               </Link>
             </TooltipTrigger>
@@ -50,7 +50,7 @@ const BottomBar = () => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-        <TooltipProvider>
+        <TooltipProvider delayDuration={0}>
           <Tooltip>
             <TooltipTrigger>
               <Link
@@ -58,8 +58,8 @@ const BottomBar = () => {
                 target="_blank"
                 className="flex items-center gap-2"
               >
-                <div className="hover:p-4 py-4 transition-all delay-[25] hover:bg-gray-100 rounded-full cursor-pointer">
-                  <Twitter className="h-[20px] w-[20px]" />
+                <div className="hover:p-4 py-4 transition-all delay-[50] hover:bg-gray-100 dark:hover:bg-white/10 rounded-full cursor-pointer">
+                  <Twitter className="h-[20px] w-[20px] dark:text-white" />
                 </div>
               </Link>
             </TooltipTrigger>
@@ -68,7 +68,7 @@ const BottomBar = () => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-        <TooltipProvider>
+        <TooltipProvider delayDuration={0}>
           <Tooltip>
             <TooltipTrigger>
               <Link
@@ -76,8 +76,8 @@ const BottomBar = () => {
                 target="_blank"
                 className="flex items-center gap-2"
               >
-                <div className="hover:p-4 py-4 transition-all delay-[25] hover:bg-gray-100 rounded-full cursor-pointer">
-                  <Linkedin className="h-[20px] w-[20px]" />
+                <div className="hover:p-4 py-4 transition-all delay-[50] hover:bg-gray-100 dark:hover:bg-white/10 rounded-full cursor-pointer">
+                  <Linkedin className="h-[20px] w-[20px] dark:text-white" />
                 </div>
               </Link>
             </TooltipTrigger>
@@ -86,7 +86,7 @@ const BottomBar = () => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-        <TooltipProvider>
+        <TooltipProvider delayDuration={0}>
           <Tooltip>
             <TooltipTrigger>
               <Link
@@ -94,8 +94,8 @@ const BottomBar = () => {
                 target="_blank"
                 className="flex items-center gap-2"
               >
-                <div className="hover:p-4 py-4 transition-all delay-[25] hover:bg-gray-100 rounded-full cursor-pointer">
-                  <Mail className="h-[20px] w-[20px]" />
+                <div className="hover:p-4 py-4 transition-all delay-[50] hover:bg-gray-100 dark:hover:bg-white/10  rounded-full cursor-pointer">
+                  <Mail className="h-[20px] w-[20px] dark:text-white" />
                 </div>
               </Link>
             </TooltipTrigger>
@@ -104,9 +104,10 @@ const BottomBar = () => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-        <TooltipProvider>
+        <TooltipProvider delayDuration={0}>
           <Tooltip>
-            <TooltipTrigger>
+            <TooltipTrigger className="flex items-center gap-2">
+              <div className="w-[1px] h-[30px] bg-gray-300" />
               <ModeToggle />
             </TooltipTrigger>
             <TooltipContent className="bg-gray-950 text-gray-100">
