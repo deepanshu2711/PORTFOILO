@@ -1,10 +1,11 @@
-import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
+import HeroSection from "@/components/ui/HeroSection";
 
 export default function Home() {
   return (
-    <main>
-      <Badge>Deepanshu</Badge>
+    <main className="max-w-3xl mx-auto px-[20px] md:px-0">
+      <div className="flex flex-col mt-16">
+        <HeroSection />
+      </div>
     </main>
   );
 }
