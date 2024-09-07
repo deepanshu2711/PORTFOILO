@@ -32,6 +32,7 @@ const ProjectsSection = () => {
               "Tailwind",
               "ShadCn",
             ]}
+            video="/save-t-drive.mp4"
           />
           <Project
             title="E-Connect"

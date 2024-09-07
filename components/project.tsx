@@ -1,3 +1,4 @@
+import { video } from "framer-motion/client";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { Github, Globe } from "lucide-react";
 import Image from "next/image";
@@ -10,6 +11,7 @@ interface ProjectProps {
   skills: string[];
   gihtub: string;
   live?: string;
+  video?: string;
 }
 
 const Project = ({
@@ -19,28 +21,32 @@ const Project = ({
   skills,
   title,
   live,
+  video,
 }: ProjectProps) => {
   return (
     <Card className="shadow-md">
       <CardHeader className="p-0">
         <div>
-          <Image
-            src={image}
-            alt="Save To Drive"
-            height={500}
-            width={500}
-            className="rounded-t-lg h-[170px] object-cover"
-          />
-          {/* <video
-            width="300"
-            className="w-[500px] h-[170px] object-cover"
-            autoPlay
-            loop
-            muted
-          >
-            <source src="/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video> */}
+          {video ? (
+            <video
+              width="300"
+              className="w-[500px] h-[170px] object-cover"
+              autoPlay
+              loop
+              muted
+            >
+              <source src="/save-t-drive.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <Image
+              src={image}
+              alt="Save To Drive"
+              height={500}
+              width={500}
+              className="rounded-t-lg h-[170px] object-cover"
+            />
+          )}
         </div>
       </CardHeader>
       <CardContent>
