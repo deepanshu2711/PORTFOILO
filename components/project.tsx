@@ -27,26 +27,13 @@ const Project = ({
     <Card className="shadow-md">
       <CardHeader className="p-0">
         <div>
-          {video ? (
-            <video
-              width="300"
-              className="w-[500px] h-[170px] object-cover"
-              autoPlay
-              loop
-              muted
-            >
-              <source src="/save-t-drive.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          ) : (
-            <Image
-              src={image}
-              alt="Save To Drive"
-              height={500}
-              width={500}
-              className="rounded-t-lg h-[170px] object-cover"
-            />
-          )}
+          <Image
+            src={image}
+            alt="Save To Drive"
+            height={500}
+            width={500}
+            className="rounded-t-lg h-[170px] object-cover"
+          />
         </div>
       </CardHeader>
       <CardContent>
