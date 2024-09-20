@@ -15,7 +15,7 @@ const HeroSection = () => {
             className="text-blue-500 hover:text-blue-600"
             href="https://kubernetes.io/"
           >
-            kubernetes
+            Testing Node+Express backend
           </Link>
         </p>
       </div>

@@ -5,7 +5,7 @@ const SkillsSection = () => {
     <div className="flex flex-col gap-4">
       <p className="text-xl font-bold">Skills</p>
       <div className="flex flex-wrap items-center gap-2">
-        <Badge className="uppercase px-2py-3">Javascript</Badge>
+        <Badge>Javascript</Badge>
         <Badge>Typescript</Badge>
         <Badge>Java</Badge>
         <Badge>React</Badge>
@@ -22,6 +22,9 @@ const SkillsSection = () => {
         <Badge>WebRtc</Badge>
         <Badge>Git</Badge>
         <Badge>GitHub</Badge>
+        <Badge>CI/CD</Badge>
+        <Badge>Unit Testing</Badge>
+        <Badge>Intergation Testing</Badge>
       </div>
     </div>
   );
