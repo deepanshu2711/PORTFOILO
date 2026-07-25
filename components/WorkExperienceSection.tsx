@@ -7,10 +7,45 @@ import { useState } from "react";
 const WorkExperienceSection = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
 
   return (
     <div className="flex flex-col gap-4">
       <p className="text-xl font-bold">Work Experience</p>
+      <div className="flex items-start justify-between">
+        <div className="flex items-start gap-3 w-full">
+          <Avatar className="border-[5px]  dark:border-gray-300 ">
+            <AvatarFallback className="bg-red-900">H</AvatarFallback>
+          </Avatar>
+          <div
+            onClick={() => setIsOpen3(!isOpen3)}
+            className="flex flex-col flex-1 items-start w-full justify-between cursor-pointer group"
+          >
+            <div className="flex items-start justify-between w-full">
+              <div>
+                <div className="flex items-center gap-2">
+                  <p className="inline-flex font-semibold leading-none text-xs sm:text-sm">
+                    HackIT Technology and Advisory Services
+                  </p>
+                  {isOpen3 ? (
+                    <ChevronRight className="inline-block w-4 h-4 ml-1 text-gray-400 transform transition-transform duration-400 rotate-90" />
+                  ) : (
+                    <ChevronRight className="inline-block w-4 h-4 ml-1 text-gray-400 transform transition-transform duration-400 animate-bounce group-hover:text-black dark:group-hover:text-white " />
+                  )}
+                </div>
+                <p className="font-sans text-xs">
+                  FULL STACK DEVELOPER (MERN STACK)
+                </p>
+              </div>
+              <div className="flex flex-col items-end">
+                <p className="font-medium hidden md:block text-gray-500 text-sm md:text-[14px]">
+                  July 2026 – Present
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="flex items-start justify-between">
         <div className="flex items-start gap-3 w-full">
           <Avatar className="border-[5px] p-1.5 dark:border-gray-300 ">
@@ -39,7 +74,7 @@ const WorkExperienceSection = () => {
               </div>
               <div className="flex flex-col items-end">
                 <p className="font-medium hidden md:block text-gray-500 text-sm md:text-[14px]">
-                  October 2024 – Present
+                  October 2024 – June 2026
                 </p>
               </div>
             </div>
@@ -104,7 +139,7 @@ const WorkExperienceSection = () => {
                   )}
                 </div>
                 <p className="font-sans text-xs">
-                  FRONTEND CORE ENGINEER(NEXT/REACT)
+                  FRONTEND CORE ENGINEER (NEXT/REACT)
                 </p>
               </div>
               <div className="flex flex-col items-end">
